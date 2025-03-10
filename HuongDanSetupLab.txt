@@ -1,3 +1,5 @@
+git clone https://github.com/LeThanhkosogian/Stenago.git
+
 B1: Sau khi git clone repo, copy folder lab của lab muốn làm (ví dụ là "intro_to_stenago_lsb") vào thư mục "/home/student/labtainer/trunk/labs/"
 B2: Mở Terminal, chạy:
 cd /home/student/labtainer/labtainer-student
