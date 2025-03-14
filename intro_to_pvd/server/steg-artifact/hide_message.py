@@ -1,5 +1,6 @@
 from PIL import Image
 import numpy as np
+import sys
 
 # Message to hide
 MESSAGE = "ToiYeuPTIT"
@@ -67,8 +68,15 @@ def encode_image(image_path, message, output_path):
 
 
 # Example usage
-encode_image(
-    "/home/ubuntu/steg-artifact/normal.png",
-    MESSAGE,
-    "/home/ubuntu/steg-artifact/steg.png",
-)
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python3 hide_message.py <message>")
+        sys.exit(1)
+    
+    MESSAGE = sys.argv[1]
+    
+    encode_image(
+        "/home/ubuntu/steg-artifact/normal.png",
+        MESSAGE,
+        "/home/ubuntu/steg-artifact/steg.png",
+    )

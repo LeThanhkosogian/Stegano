@@ -12,6 +12,17 @@ Fix lỗi khi chạy:
     [2025-03-10 00:45:22,754 - ERROR : labutils.py:818 - CreateSubnets() ] An existing Docker network is preventing this lab from starting.
     [2025-03-10 00:45:22,755 - ERROR : labutils.py:819 - CreateSubnets() ] Try removing the network with:
     [2025-03-10 00:45:22,755 - ERROR : labutils.py:820 - CreateSubnets() ] docker network rm my-network
-    Nguyên nhân: do card mạng bị trùng nhau => chạy: docker network rm my-network (hoặc tên network tương ứng máy các bạn)
+    Nguyên nhân: do card mạng bị trùng nhau
+    => chạy: docker network rm my-network (my-network là tên network tương ứng máy các bạn)
 
 - checkwork intro_to_pvd
+    intro_to_pvd-igrader is currently running, it will be stopped before a new checkwork is started.
+    Results stored in directory: /home/student/labtainer_xfer/intro_to_pvd
+    Successfully copied 89.1kB to intro_to_pvd-igrader:/home/instructor/b21dcat176.intro_to_pvd.lab
+    [2025-03-14 08:29:18,086 - ERROR : gradelab:282 - autoGrade() ] Error occurred within the grader container.  
+    See $LABTAINER_DIR/logs/grader.log
+    Successfully copied 3.58kB to /home/student/labtainer/trunk/logs/instructor.log
+    Nguyên nhân: do user hiện tại thiếu quyền thực thi
+    => chạy: 
+        chmod 777 /home/student/labtainer/trunk/labs/intro_to_pvd --recursive 
+        ls -l /home/student/labtainer/trunk/labs/intro_to_pvd
