@@ -1,7 +1,17 @@
 git clone https://github.com/LeThanhkosogian/Stenago.git
 
-B1: Sau khi git clone repo, copy folder lab của lab muốn làm (ví dụ là "intro_to_stenago_lsb") vào thư mục "/home/student/labtainer/trunk/labs/"
+B1: Sau khi git clone repo, copy folder lab của lab muốn làm (ví dụ là "intro_to_pvd") vào thư mục "/home/student/labtainer/trunk/labs/"
 B2: Mở Terminal, chạy:
 cd /home/student/labtainer/labtainer-student
-labtainer intro_to_stenago_lsb
-B3: Đọc hướng dẫn làm bài trong "intro_to_stenago_lsb/docs/HuongDanLamLab.txt"
+labtainer intro_to_pvd
+B3: Đọc hướng dẫn làm bài trong "intro_to_pvd/docs/HuongDanLamLab.txt"
+
+
+Fix lỗi khi chạy:
+- labtainer intro_to_pvd
+    [2025-03-10 00:45:22,754 - ERROR : labutils.py:818 - CreateSubnets() ] An existing Docker network is preventing this lab from starting.
+    [2025-03-10 00:45:22,755 - ERROR : labutils.py:819 - CreateSubnets() ] Try removing the network with:
+    [2025-03-10 00:45:22,755 - ERROR : labutils.py:820 - CreateSubnets() ] docker network rm my-network
+    Nguyên nhân: do card mạng bị trùng nhau => chạy: docker network rm my-network (hoặc tên network tương ứng máy các bạn)
+
+- checkwork intro_to_pvd
