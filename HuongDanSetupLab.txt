@@ -1,4 +1,4 @@
-git clone https://github.com/LeThanhkosogian/Stenago.git
+git clone https://github.com/LeThanhkosogian/Stegano.git
 
 B1: Sau khi git clone repo, copy folder lab của lab muốn làm (ví dụ là "intro_to_pvd") vào thư mục "/home/student/labtainer/trunk/labs/"
 B2: Mở Terminal, chạy:
