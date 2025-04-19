@@ -1,6 +1,6 @@
 B1: student@LabtainerVMware:~/labtainer/labtainer-student$ imodule https://github.com/LeThanhkosogian/Stegano/raw/refs/heads/main/intro_to_pvd.tar
 B2: student@LabtainerVMware:~/labtainer/labtainer-student$ labtainer intro_to_pvd
-B3: Đọc hướng dẫn làm bài trong "/home/student/labtainer/trunk/labs/intro_to_pvd/docs/intro_to_pvd_guideline.txt"
+B3: Đọc hướng dẫn làm bài "cat /home/student/labtainer/trunk/labs/intro_to_pvd/docs/intro_to_pvd_guideline.txt"
 
 
 Fix lỗi khi chạy:
