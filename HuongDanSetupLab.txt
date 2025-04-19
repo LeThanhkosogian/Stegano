@@ -20,5 +20,4 @@ Fix lỗi khi chạy:
     Successfully copied 3.58kB to /home/student/labtainer/trunk/logs/instructor.log
     Nguyên nhân: do user hiện tại thiếu quyền thực thi
     => chạy: 
-        chmod 777 /home/student/labtainer/trunk/labs/intro_to_pvd --recursive 
-        ls -l /home/student/labtainer/trunk/labs/intro_to_pvd
+        chmod 777 /home/student/labtainer/trunk/labs --recursive 

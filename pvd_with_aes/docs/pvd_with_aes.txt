@@ -1,0 +1,37 @@
+Checkwork1: hide_message
+Trên terminal "Server":
+python3 steg-artifact/hide.py
+    Nhập thông điệp cần mã hóa: <thông điệp có thể là tiếng việt>
+    Nhập mật khẩu: <mật khẩu có thể là tiếng việt>
+    Encrypted message: <encoded message>
+    Nhập đường dẫn đến ảnh: steg-artifact/normal.png
+    Nhập đường dẫn để lưu ảnh chứa thông điệp đã mã hóa: steg-artifact/steg.png
+=> Expected output:
+Message was hidden in: <đường dẫn đã nhập>
+
+Có thể dùng feh để kiểm tra ảnh
+feh steg-artifact/normal.png
+feh steg-artifact/steg.png
+
+python3 -m http.server
+
+
+
+Checkwork2: unhide_message
+Tren terminal "Client":
+python3 -c "import urllib.request; urllib.request.urlretrieve('http://172.20.0.20:8000/steg-artifact/steg.png', 'steg-artifact/steg.png')"
+python3 steg-artifact/unhide.py
+Nhập đường dẫn đến ảnh chứa thông điệp: steg-artifact/steg.png
+=> Expected output:
+Thông điệp mã hoá đã được giấu là: <thông điệp mã hoá được giấu>
+
+
+Checkwork3: decrypt_message
+Tren terminal "Client":
+Nhập mật khẩu để giải mã: <nhập mật khẩu để giải mã>
+=> Expected output:
+Decrypted message: <thông điệp được giải mã>
+
+
+
+
