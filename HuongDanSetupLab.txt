@@ -1,5 +1,5 @@
 B1: student@LabtainerVMware:~/labtainer/labtainer-student$ imodule https://github.com/LeThanhkosogian/Stegano/raw/refs/heads/main/intro_to_pvd.tar
-B2: student@LabtainerVMware:~/labtainer/labtainer-student$ labtainer intro_to_pvd
+B2: student@LabtainerVMware:~/labtainer/labtainer-student$ labtainer -r intro_to_pvd
 B3: Đọc hướng dẫn làm bài "cat /home/student/labtainer/trunk/labs/intro_to_pvd/docs/intro_to_pvd_guideline.txt"
 
 
@@ -9,7 +9,10 @@ Fix lỗi khi chạy:
     [2025-03-10 00:45:22,755 - ERROR : labutils.py:819 - CreateSubnets() ] Try removing the network with:
     [2025-03-10 00:45:22,755 - ERROR : labutils.py:820 - CreateSubnets() ] docker network rm my-network
     Nguyên nhân: do card mạng bị trùng nhau
-    => chạy: docker network rm my-network (my-network là tên network tương ứng máy các bạn)
+    => chạy: docker network inspect my-network --format '{{range .
+    Containers}}{{.Name}} {{end}}' | xargs -r docker rm -f && docker network rm my-network (my-network là tên network tương ứng máy các bạn)
+
+    
 
 - checkwork intro_to_pvd
     intro_to_pvd-igrader is currently running, it will be stopped before a new checkwork is started.
