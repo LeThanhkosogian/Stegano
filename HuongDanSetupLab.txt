@@ -2,13 +2,12 @@ B1: student@LabtainerVMware:~/labtainer/labtainer-student$ imodule https://githu
 B2: student@LabtainerVMware:~/labtainer/labtainer-student$ labtainer -r intro_to_pvd
 
 Fix lỗi khi chạy:
-- labtainer intro_to_pvd
+- labtainer -r intro_to_pvd
     [2025-03-10 00:45:22,754 - ERROR : labutils.py:818 - CreateSubnets() ] An existing Docker network is preventing this lab from starting.
     [2025-03-10 00:45:22,755 - ERROR : labutils.py:819 - CreateSubnets() ] Try removing the network with:
     [2025-03-10 00:45:22,755 - ERROR : labutils.py:820 - CreateSubnets() ] docker network rm my-network
     Nguyên nhân: do card mạng bị trùng nhau
-    => chạy: docker network inspect my-network --format '{{range .
-    Containers}}{{.Name}} {{end}}' | xargs -r docker rm -f && docker network rm my-network (my-network là tên network tương ứng máy các bạn)
+    => chạy: docker network inspect some_network --format '{{range.Containers}}{{.Name}} {{end}}' | xargs -r docker rm -f && docker network rm some_network (some_network là tên network tương ứng máy các bạn)
 
     
 
