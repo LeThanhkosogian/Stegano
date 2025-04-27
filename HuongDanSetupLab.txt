@@ -1,7 +1,5 @@
 B1: student@LabtainerVMware:~/labtainer/labtainer-student$ imodule https://github.com/LeThanhkosogian/Stegano/raw/refs/heads/main/intro_to_pvd.tar
 B2: student@LabtainerVMware:~/labtainer/labtainer-student$ labtainer -r intro_to_pvd
-B3: Đọc hướng dẫn làm bài "cat /home/student/labtainer/trunk/labs/intro_to_pvd/docs/intro_to_pvd_guideline.txt"
-
 
 Fix lỗi khi chạy:
 - labtainer intro_to_pvd
@@ -24,3 +22,7 @@ Fix lỗi khi chạy:
     Nguyên nhân: do user hiện tại thiếu quyền thực thi
     => chạy: 
         chmod 777 /home/student/labtainer/trunk/labs --recursive 
+
+
+
+B3: Đọc hướng dẫn làm bài "cat /home/student/labtainer/trunk/labs/intro_to_pvd/docs/intro_to_pvd_guideline.txt"
