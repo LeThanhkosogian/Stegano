@@ -1,5 +1,5 @@
 B1: student@LabtainerVMware:~/labtainer/labtainer-student$ imodule https://github.com/LeThanhkosogian/Stegano/raw/refs/heads/main/intro_to_pvd.tar
-B2: student@LabtainerVMware:~/labtainer/labtainer-student$ labtainer -r intro_to_pvd
+B2: student@LabtainerVMware:~/labtainer/labtainer-student$ labtainer intro_to_pvd
 
 Fix lỗi khi chạy:
 - labtainer -r intro_to_pvd
